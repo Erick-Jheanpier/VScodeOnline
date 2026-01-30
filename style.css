@@ -28,7 +28,7 @@ body {
   flex-direction: column;
 }
 
-/* EDITORES */
+/* EDITOR */
 .editors {
   display: flex;
   height: 65%;

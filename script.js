@@ -36,7 +36,7 @@ require(["vs/editor/editor.main"], function () {
   emmetMonaco.emmetHTML(monaco);
   emmetMonaco.emmetCSS(monaco);
 
-  // JS IntelliSense
+  // JS intellisense
   monaco.languages.typescript.javascriptDefaults.setCompilerOptions({
     target: monaco.languages.typescript.ScriptTarget.Latest,
     allowNonTsExtensions: true
