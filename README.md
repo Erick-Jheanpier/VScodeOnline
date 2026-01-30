@@ -1,1 +1,1 @@
-creado por Erick Jhampier Perez Saravia
+creado por Erick Jhampier Perez Saravia estudiante de ingenieria de software con inteligencia artificial
