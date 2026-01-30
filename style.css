@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1e1e1e;
+  color: #ccc;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.topbar {
+  height: 40px;
+  background: #252526;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  color: white;
+  font-size: 14px;
+}
+
+/* =======================
+   WORKSPACE
+======================= */
+.workspace {
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* =======================
+   EDITORS
+======================= */
+.editors {
+  display: flex;
+  height: 65%;
+  min-height: 180px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.title {
+  height: 30px;
+  background: #2d2d2d;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 13px;
+  color: white;
+}
+
+.editor {
+  flex: 1;
+  min-height: 0;
+}
+
+/* =======================
+   OUTPUT
+======================= */
+.output {
+  flex: 1;
+  display: flex;
+  background: #fff;
+  min-height: 0;
+}
+
+iframe {
+  flex: 1;
+  border: none;
+  background: white;
+  min-width: 200px;
+}
+
+.console {
+  width: 260px;
+  background: #111;
+  color: #0f0;
+  font-family: monospace;
+  font-size: 13px;
+  padding: 8px;
+  overflow-y: auto;
+  border-left: 1px solid #333;
+  min-width: 180px;
+}
+
+/* =======================
+   RESIZERS
+======================= */
+.resizer-vertical {
+  width: 5px;
+  cursor: col-resize;
+  background: #333;
+}
+
+.resizer-horizontal {
+  height: 5px;
+  cursor: row-resize;
+  background: #333;
+}
+
+.resizer-vertical:hover,
+.resizer-horizontal:hover {
+  background: #007acc;
+}

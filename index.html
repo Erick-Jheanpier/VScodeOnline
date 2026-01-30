@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Erick Web PRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">⚡ Erick Web PRO</header>
+
+<div class="workspace">
+
+  <!-- EDITORES -->
+  <div class="editors">
+    <div class="column">
+      <div class="title">HTML</div>
+      <div id="htmlEditor" class="editor"></div>
+    </div>
+
+    <div class="resizer-vertical"></div>
+
+    <div class="column">
+      <div class="title">CSS</div>
+      <div id="cssEditor" class="editor"></div>
+    </div>
+
+    <div class="resizer-vertical"></div>
+
+    <div class="column">
+      <div class="title">JavaScript</div>
+      <div id="jsEditor" class="editor"></div>
+    </div>
+  </div>
+
+  <!-- RESIZER HORIZONTAL -->
+  <div class="resizer-horizontal"></div>
+
+  <!-- OUTPUT -->
+  <div class="output">
+    <iframe id="preview"></iframe>
+
+    <div class="resizer-vertical output-resizer"></div>
+
+    <div id="console" class="console"></div>
+  </div>
+
+</div>
+
+<!-- Monaco -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
+
+<!-- Emmet -->
+<script src="https://unpkg.com/emmet-monaco-es/dist/emmet-monaco.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
