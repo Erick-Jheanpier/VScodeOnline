@@ -22,17 +22,22 @@ body {
   font-size: 14px;
 }
 
+/* =======================
+   WORKSPACE
+======================= */
 .workspace {
   height: calc(100vh - 40px);
   display: flex;
   flex-direction: column;
 }
 
-/* EDITOR */
+/* =======================
+   EDITORS
+======================= */
 .editors {
   display: flex;
   height: 65%;
-  min-height: 200px;
+  min-height: 180px;
 }
 
 .column {
@@ -54,34 +59,41 @@ body {
 
 .editor {
   flex: 1;
+  min-height: 0;
 }
 
-/* OUTPUT */
+/* =======================
+   OUTPUT
+======================= */
 .output {
   flex: 1;
   display: flex;
-  flex-direction: column;
   background: #fff;
+  min-height: 0;
 }
 
 iframe {
   flex: 1;
   border: none;
   background: white;
+  min-width: 200px;
 }
 
 .console {
-  height: 140px;
+  width: 260px;
   background: #111;
   color: #0f0;
   font-family: monospace;
   font-size: 13px;
   padding: 8px;
   overflow-y: auto;
-  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+  min-width: 180px;
 }
 
-/* RESIZERS */
+/* =======================
+   RESIZERS
+======================= */
 .resizer-vertical {
   width: 5px;
   cursor: col-resize;
@@ -97,66 +109,4 @@ iframe {
 .resizer-vertical:hover,
 .resizer-horizontal:hover {
   background: #007acc;
-}
-
-/* RESPONSIVE - MÓVIL */
-@media (max-width: 768px) {
-  .topbar {
-    font-size: 12px;
-    padding: 0 10px;
-  }
-
-  .editors {
-    flex-direction: column;
-    height: auto;
-    min-height: auto;
-  }
-
-  .column {
-    min-width: auto;
-    min-height: 150px;
-  }
-
-  .resizer-vertical {
-    display: none;
-  }
-
-  .resizer-horizontal {
-    height: 8px;
-    touch-action: none;
-  }
-
-  .console {
-    height: 100px;
-    font-size: 11px;
-  }
-
-  .title {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .topbar {
-    height: 35px;
-    font-size: 11px;
-  }
-
-  .workspace {
-    height: calc(100vh - 35px);
-  }
-
-  .column {
-    min-height: 120px;
-  }
-
-  .console {
-    height: 80px;
-    font-size: 10px;
-  }
-
-  .title {
-    height: 28px;
-    font-size: 11px;
-  }
 }
